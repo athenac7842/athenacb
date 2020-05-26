@@ -118,7 +118,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form data-netlify="true" method="post" action="#">
+								<form data-netlify="true" method="post" onsubmit="openModal()">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -138,6 +138,17 @@
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
+								<!-- The Modal -->
+								<div id="myModal" class="modal">
+
+									<!-- Modal content -->
+									<div class="modal-content">
+									<span class="close">&times;</span>
+									<p>Your message has been sent.</p>
+									</div>
+
+								</div>	
+								
 							</section>
 							<section class="split">
 								<ul class="icons">
@@ -160,16 +171,6 @@
 						</div>
 					</section>
 
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-
-					<!-- Modal content -->
-					<div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Your message has been sent.</p>
-					</div>
-				
-				</div>	
 
 				<!-- Footer -->
 					<footer id="footer">
