@@ -1,4 +1,4 @@
-$("#confirm").submit(function(e) {
+$("#contacte").submit(function(e) {
   e.preventDefault();
 
   var $form = $(this);
