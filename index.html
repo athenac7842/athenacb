@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>It's randomathena13!</title>
+		<title>Hi! You've reached Athena.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="modal.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -133,7 +134,7 @@
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input id="confirm" type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
@@ -155,25 +156,20 @@
 										<a href="mailto: athenacb@college.harvard.edu">athenacb@college.harvard.edu</a>
 									</div>
 								</section>
-								<!-- <section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section> -->
 							</section>
 						</div>
 					</section>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Your message has been sent.</p>
+					</div>
+				
+				</div>	
 
 				<!-- Footer -->
 					<footer id="footer">
