@@ -973,11 +973,13 @@ input, select, textarea {
 		flex-wrap: wrap;
 		padding: 0 0.75em;
 	}
-
+		/* size and visual of thumbnail */
 		#thumbnails article {
 			position: relative;
-			width: 50%;
-			background: #101010;
+			/* how do I center them */
+			width: 125px;
+			height: 100px;
+			background: #cfcccc;
 			outline: 0;
 		}
 
@@ -991,9 +993,13 @@ input, select, textarea {
 
 				#thumbnails article .thumbnail img {
 					display: block;
-					width: 100%;
+					width: 125px;
+					height: 100px;
+					/* zooms to fit */
+					object-fit: cover;
 				}
 
+				/* highlight when selected */
 				#thumbnails article .thumbnail:before {
 					pointer-events: none;
 					-moz-transition: opacity 0.25s ease;
@@ -1004,8 +1010,8 @@ input, select, textarea {
 					position: absolute;
 					left: 0;
 					top: 0;
-					width: 100%;
-					height: 100%;
+					width: 125px;
+					height: 100px;
 					box-shadow: inset 0 0 0 2px #00D3B7, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
 					opacity: 0;
 					z-index: 1;
